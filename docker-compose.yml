@@ -1,0 +1,32 @@
+services:
+
+  backend:
+    container_name: app_backend
+    image: app
+    restart: on-failure
+    build:
+      context: .
+      dockerfile: ./docker/python/Dockerfile
+    volumes:
+      - .:/app
+      - media:/app/media/
+      - staticfiles:/app/staticfiles/
+    command: poetry run gunicorn app.wsgi:application -b 0.0.0.0:8000 --env DJANGO_SETTINGS_MODULE=app.settings.docker -w 4 --timeout 300 --reload
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    env_file: .env
+    networks:
+      - app_network
+
+volumes:
+  media:
+    driver: local
+  staticfiles:
+    driver: local
+
+networks:
+  app_network:
+    name: app_network
+    driver: bridge
+    ipam:
+      driver: default

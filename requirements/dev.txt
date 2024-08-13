@@ -1,0 +1,7 @@
+coverage
+django-debug-toolbar
+django-extensions
+drf-spectacular
+flake8
+ipython
+pre-commit
