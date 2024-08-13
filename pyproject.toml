@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = "Base app for Django"
+authors = ["kai <thuan.dv0@gmail.com>"]
+repository = "https://github.com/ThuanD/base_django"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.0.7"
+django-cors-headers = "^4.4.0"
+django-constance = "^3.1.0"
+django-filter = "^24.2"
+gunicorn = "^22.0.0"
+python-dotenv = "^1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.6.0"
+django-dbbackup = "^4.1.0"
+django-debug-toolbar = "^4.4.6"
+django-extensions = "^3.2.3"
+drf-spectacular = "^0.27.2"
+flake8 = "^7.1.0"
+ipython = "^8.26.0"
+pre-commit = "^3.8.0"
+
+
+[tool.poetry.group.test.dependencies]
+coverage = "^7.6.0"
+flake8 = "^7.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

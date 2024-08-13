@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-12 18:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: app/settings/common.py:201
+msgid "English"
+msgstr "Tiếng Anh"
+
+#: app/settings/common.py:202
+msgid "Vietnamese"
+msgstr "Tiếng Việt"
+
+#: app/settings/common.py:361
+msgid "Maintenance mode"
+msgstr "Chế độ bảo trì"
+
+#: app/settings/common.py:365
+msgid "Maintenance configuration"
+msgstr "Cấu hình bảo trì"
+
+#: app/message/errors.py:5
+msgid "Server is under maintenance."
+msgstr "Máy chủ đang được bảo trì."
+
+#: app/message/middlewares.py:4
+msgid "Start of request."
+msgstr "Bắt đầu yêu cầu."
+
+#: app/message/middlewares.py:5
+msgid "End of request."
+msgstr "Kết thúc yêu cầu."
+
+#: apps/api_doc/docs/__init__.py:8
+msgid ""
+"Check the request body schema to see the validation information for the "
+"fields. Error `message` are mutable."
+msgstr ""
+
+#: apps/api_doc/docs/__init__.py:20
+msgid "Error message for this field!"
+msgstr "Thông báo lỗi cho trường này!"
